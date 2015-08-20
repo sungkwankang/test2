@@ -4,7 +4,14 @@
         <WINDOW layout="0,0,320,460" defaultImg="#ffffff">
             <LABEL layout="100,100,auto,auto" text="Hello MOML" />
             <!--<WEBVIEW layout="10,60,300,300" src="htp://"-->
-            <WEBVIEW layout="10,60,300,300" />
+            <CAMERA layout="10,60,300,300" />
+            <WINDOW layout="10,380,330,auto" align="linear">
+                <BUTTON text="Close" onClick="cam.open"/>
+                <BUTTON text="Close" onClick="cam.close"/>
+                <BUTTON text="front" onClick="cam.type='front'"/>
+                <BUTTON text="front" onClick="cam.type='back'"/>
+                
+            </WINDOW>
         </WINDOW>
     </UILAYOUT>
 </MOML>
